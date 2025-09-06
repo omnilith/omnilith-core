@@ -4,7 +4,7 @@ import { PgEventStore } from "../src/PgEventStore";
 import { randomUUID } from "crypto";
 
 const testPool = new Pool({
-  connectionString: "postgresql://localhost:5432/omnilith_test",
+  connectionString: "postgresql://localhost:5432/omnilith_test", //TODO: Don't harcode
 });
 
 const eventStore = new PgEventStore(testPool);
